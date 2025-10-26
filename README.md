@@ -32,15 +32,24 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **PROGRAM**
 
+UP COUNTER module ex11(out,clk,rst); input clk,rst; output reg [3:0]out; always @ (posedge clk) begin if(rst) out<=0; else out <= out+1; end endmodule DOWN COUNTER module ex12(out,clk,rst); input clk,rst; output reg [3:0]out; always @ (posedge clk) begin if(rst) out<=0; else out <= out-1; end endmodule
+
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
+Developed by:Shafi Ahmed MS RegisterNumber:25014933
 */
 
 **RTL LOGIC UP COUNTER**
 
+<img width="1038" height="553" alt="image" src="https://github.com/user-attachments/assets/858f7c29-50c5-49bf-b8fe-83caa697a63c" />
+
+<img width="1034" height="570" alt="image" src="https://github.com/user-attachments/assets/eea836f7-c63b-4628-a8df-d216c1abe519" />
+
 **TIMING DIAGRAM FOR IP COUNTER**
+
+<img width="1040" height="525" alt="image" src="https://github.com/user-attachments/assets/4a941f83-43f4-4363-bfab-ebf24262b5aa" />
 
 **TRUTH TABLE**
 
 **RESULTS**
+Thus the OUTPUT’s of Synchronous and Asynchronous counter are verified by synthesizing and simulating the VERILOG code.
